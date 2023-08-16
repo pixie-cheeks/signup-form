@@ -171,7 +171,6 @@ form {
 }
 
 .cell > label {
-	/* font-family: monospace; */
 	font-size: 1rem;
 	color: rgb(4, 12, 31);
 	letter-spacing: 0.1rem;
@@ -191,7 +190,11 @@ form {
 	box-shadow: 2px 2px 4px rgb(167, 163, 163);
 }
 
-.error {
+.cell > input:required {
+	border: 0.1rem solid gray;
+}
+
+.cell > input.error {
 	border: 0.1rem solid red;
 }
 
