@@ -1,0 +1,108 @@
+/* Setups and resets */
+@font-face {
+	font-family: "Norse Bold";
+	src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 1.6rem;
+	display: flex;
+}
+
+/* Z-index section */
+.image-part,
+.content-part > div {
+	position: relative;
+}
+
+.image-part,
+.header {
+	z-index: 3;
+}
+
+.user-input {
+	z-index: 1;
+}
+
+.user-submission {
+	z-index: 0;
+}
+
+/* The basic structure of the page */
+.image-part {
+	flex: 1;
+	background: url(images/background-image.avif) no-repeat;
+}
+
+.content-part {
+	flex: 2;
+}
+
+/* The left side of the page */
+.image-part,
+.image-credit a {
+	color: white;
+}
+
+.image-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.logo-container {
+	align-self: stretch;
+	background-color: rgb(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	margin-top: 15rem;
+}
+
+img.logo {
+	height: 11rem;
+	width: auto;
+}
+
+.logo-text {
+	font-family: "Norse Bold";
+	font-size: 9rem;
+}
+
+/* The right side of the page */
+.content-part {
+	display: flex;
+	flex-direction: column;
+}
+
+.content-part > div {
+	flex: 1;
+}
+
+.header,
+.user-submission {
+	background-color: rgb(245, 245, 245);
+}
+
+.header {}
+
+.user-input {
+	background-color: hsl(0, 0, 100%);
+	box-shadow: 0px 0px 10px 0px rgb(142, 141, 141);
+}
+
+.user-submission {}
