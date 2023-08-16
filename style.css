@@ -190,10 +190,6 @@ form {
 	box-shadow: 2px 2px 4px rgb(167, 163, 163);
 }
 
-.cell > input:required {
-	border: 0.1rem solid gray;
-}
-
 .cell > input.error {
 	border: 0.1rem solid red;
 }
